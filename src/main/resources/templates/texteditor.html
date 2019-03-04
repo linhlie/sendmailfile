@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>TinyMCE - Setup</title>
+		<script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+        <script type="text/javascript" th:src="@{/plugin/tinymce/tinymce.min.js}"></script>
+        <script type="text/javascript" th:src="@{/plugin/tinymce/init-tinymce.js}"></script>
+        <script type="text/javascript" th:src="@{/js/getdata.js}"></script>
+	</head>
+	<body>
+		<form id="get-data-form" method="post">
+
+        			<textarea class="tinymce" id="texteditor"></textarea>
+        			<input type="submit" value="Get Data">
+
+        		</form>
+
+        		<div id="data-container">
+        		</div>
+	</body>
+
+</html>
